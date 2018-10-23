@@ -8,7 +8,8 @@
     "is-valid-email": "0.0.2",
     "url": "^0.11.0",
     "valid-url": "^1.0.9",
-    "virtual-dom": "^2.1.1"
+    "virtual-dom": "^2.1.1",
+    "snyk": "^1.104.2"
   },
   "devDependencies": {
     "babel-core": "^6.6.5",
@@ -19,6 +20,9 @@
   "scripts": {
     "build-js": "browserify formspree/static/js/main.js -t babelify --outfile formspree/static/js/bundle.js",
     "build-css": "scss --sourcemap=none formspree/static/scss/main.scss formspree/static/css/main.css",
-    "build": "npm run build-js && npm run build-css"
-  }
+    "build": "npm run build-js && npm run build-css",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
