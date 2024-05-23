@@ -18,7 +18,7 @@ paste
 psycopg2
 python-dotenv
 redis
-requests==2.1.0
+requests==2.32.0
 stripe
 structlog==16.1
 unicodecsv==0.14.1
